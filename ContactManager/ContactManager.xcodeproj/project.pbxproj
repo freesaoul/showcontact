@@ -31,6 +31,7 @@
 		8BE028961B34609500DADC29 /* 93medium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BE028891B34609500DADC29 /* 93medium.jpg */; };
 		8BE028971B34609500DADC29 /* 93thumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BE0288A1B34609500DADC29 /* 93thumbnail.jpg */; };
 		8BE0289A1B34610700DADC29 /* ContactCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE028991B34610700DADC29 /* ContactCollectionViewController.m */; };
+		8BE0289D1B34835700DADC29 /* ContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE0289C1B34835700DADC29 /* ContactDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		8BE0288A1B34609500DADC29 /* 93thumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 93thumbnail.jpg; sourceTree = "<group>"; };
 		8BE028981B34610700DADC29 /* ContactCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCollectionViewController.h; sourceTree = "<group>"; };
 		8BE028991B34610700DADC29 /* ContactCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCollectionViewController.m; sourceTree = "<group>"; };
+		8BE0289B1B34835700DADC29 /* ContactDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailViewController.h; sourceTree = "<group>"; };
+		8BE0289C1B34835700DADC29 /* ContactDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +180,8 @@
 				8BE0284B1B345C8A00DADC29 /* AppDelegate.m */,
 				8BE028981B34610700DADC29 /* ContactCollectionViewController.h */,
 				8BE028991B34610700DADC29 /* ContactCollectionViewController.m */,
+				8BE0289B1B34835700DADC29 /* ContactDetailViewController.h */,
+				8BE0289C1B34835700DADC29 /* ContactDetailViewController.m */,
 				8BE028501B345C8A00DADC29 /* Main.storyboard */,
 			);
 			name = GUI;
@@ -321,6 +326,7 @@
 				8BE028761B345E4C00DADC29 /* Contact.m in Sources */,
 				8BE0289A1B34610700DADC29 /* ContactCollectionViewController.m in Sources */,
 				8BE028771B345E4C00DADC29 /* Location.m in Sources */,
+				8BE0289D1B34835700DADC29 /* ContactDetailViewController.m in Sources */,
 				8BE028491B345C8A00DADC29 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

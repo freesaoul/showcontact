@@ -26,20 +26,23 @@
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" id="fYl-AF-zZD">
+                                        <imageView userInteractionEnabled="NO" tag="90" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZBl-cH-oIj">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="113-bG-3aj">
                                             <rect key="frame" x="0.0" y="79" width="100" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZBl-cH-oIj">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="inJ-WX-xeA" kind="modal" identifier="showContactDetail" id="ubV-vr-2gY"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -53,9 +56,40 @@
             </objects>
             <point key="canvasLocation" x="1185" y="317"/>
         </scene>
+        <!--Contact Detail View Controller-->
+        <scene sceneID="UXh-HM-oG9">
+            <objects>
+                <viewController id="inJ-WX-xeA" customClass="ContactDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AME-4S-hiJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DGo-SZ-Jgv">
+                                <rect key="frame" x="0.0" y="76" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="7l5-pa-NuH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="JF0-m9-2d8">
+                                        <barButtonItem key="rightBarButtonItem" title="Close" id="Dtf-1d-2S6"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8q-PT-UKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="317"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Aex-k4-LHI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LN4-ta-Rqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="g2Q-AE-be1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wxw-e5-5y7">
@@ -67,7 +101,6 @@
                         <segue destination="ms2-HC-HKO" kind="relationship" relationship="rootViewController" id="OwJ-ot-qwU"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LN4-ta-Rqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="317"/>
         </scene>

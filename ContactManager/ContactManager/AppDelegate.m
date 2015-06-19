@@ -28,7 +28,7 @@
     
     Contact *contact30 = [[Contact alloc] initWithTitle:@"mr" first:@"johnni" last:@"stone" street:@"9574 w belt line rd" city:@"roanoke" state:@"iawaii" zipCode:88880 large:nil medium:nil thumbnail:[UIImage imageNamed:@"30thumbnail.jpg"] gender:@"male" email:@"johnni.stone57@example.com" username:@"heavycat526" password:@"ciccio" phone:@"(199)-537-7955" cell:@"(306)-835-6106" ssn:@"660-63-9633"];
     
-    NSMutableArray *contacts = [NSMutableArray arrayWithObjects:contact93, contact21,contact37, contact30, nil];
+    NSMutableArray *contacts = [NSMutableArray arrayWithObjects:contact93, contact21, contact37, contact30, nil];
     
     UINavigationController *navController = (UINavigationController*) self.window.rootViewController;
     ContactCollectionViewController *contactCollectionController = [navController.viewControllers objectAtIndex:0];

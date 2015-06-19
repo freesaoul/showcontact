@@ -26,7 +26,7 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    //[self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
 }
@@ -57,22 +57,21 @@ static NSString * const reuseIdentifier = @"Cell";
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
     //NSLog(@"%lu", (unsigned long)_contacts.count);
-    return [_contacts count];
+    return [self.contacts count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     Contact *contact = [self.contacts objectAtIndex:indexPath.row];
-    UILabel *cellLabel = (UILabel*) [cell viewWithTag:99];
-    UIImageView *cellImage = (UIImageView*) [cell viewWithTag:100];
+    UILabel *cellLabel = (UILabel*) [cell viewWithTag:100];
+    UIImageView *cellImage = (UIImageView*) [cell viewWithTag:90];
     
-    NSLog(@"test1 %@", cellLabel.text);
     cellLabel.text = [contact username];
-    NSLog(@"test: %@", [contact username]);
-    NSLog(@"test2 %@", cellLabel.text);
-    
     cellImage.image = [[contact pictures] thumbnail];
+
+    [cell.layer setBorderWidth:2.0f];
+    [cell.layer setBorderColor:[UIColor blackColor].CGColor];
     
     return cell;
 }
