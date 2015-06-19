@@ -30,6 +30,7 @@
 		8BE028951B34609500DADC29 /* 93large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BE028881B34609500DADC29 /* 93large.jpg */; };
 		8BE028961B34609500DADC29 /* 93medium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BE028891B34609500DADC29 /* 93medium.jpg */; };
 		8BE028971B34609500DADC29 /* 93thumbnail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BE0288A1B34609500DADC29 /* 93thumbnail.jpg */; };
+		8BE0289A1B34610700DADC29 /* ContactCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE028991B34610700DADC29 /* ContactCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		8BE028881B34609500DADC29 /* 93large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 93large.jpg; sourceTree = "<group>"; };
 		8BE028891B34609500DADC29 /* 93medium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 93medium.jpg; sourceTree = "<group>"; };
 		8BE0288A1B34609500DADC29 /* 93thumbnail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 93thumbnail.jpg; sourceTree = "<group>"; };
+		8BE028981B34610700DADC29 /* ContactCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactCollectionViewController.h; sourceTree = "<group>"; };
+		8BE028991B34610700DADC29 /* ContactCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 			children = (
 				8BE0284A1B345C8A00DADC29 /* AppDelegate.h */,
 				8BE0284B1B345C8A00DADC29 /* AppDelegate.m */,
+				8BE028981B34610700DADC29 /* ContactCollectionViewController.h */,
+				8BE028991B34610700DADC29 /* ContactCollectionViewController.m */,
 				8BE028501B345C8A00DADC29 /* Main.storyboard */,
 			);
 			name = GUI;
@@ -314,6 +319,7 @@
 				8BE028781B345E4C00DADC29 /* Name.m in Sources */,
 				8BE0284C1B345C8A00DADC29 /* AppDelegate.m in Sources */,
 				8BE028761B345E4C00DADC29 /* Contact.m in Sources */,
+				8BE0289A1B34610700DADC29 /* ContactCollectionViewController.m in Sources */,
 				8BE028771B345E4C00DADC29 /* Location.m in Sources */,
 				8BE028491B345C8A00DADC29 /* main.m in Sources */,
 			);

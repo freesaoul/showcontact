@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "ContactCollectionViewController.h"
+#import "Contact.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    Contact *contact93 = [[Contact alloc] initWithTitle:@"mr" first:@"leslie" last:@"ward" street:@"9217 karen dr" city:@"saginaw" state:@"louisiana" zipCode:48632 large:nil medium:nil thumbnail:[UIImage imageNamed:@"93thumbnail.jpg"] gender:@"male" email:@"leslie.ward13@example.com" username:@"test" password:@"test" phone:@"(381)-169-4285" cell:@"(111)-575-9497" ssn:@"157-91-2324"];
+    
+    Contact *contact21 = [[Contact alloc] initWithTitle:@"mr" first:@"albert" last:@"bradley" street:@"4254 mcgowen st" city:@"belen" state:@"west virginia" zipCode:89166 large:nil medium:nil thumbnail:[UIImage imageNamed:@"21thumbnail.jpg"] gender:@"male" email:@"albert.bradley56@example.com" username:@"purplemouse902" password:@"buckeyes" phone:@"(489)-211-6231" cell:@"(832)-595-6064" ssn:@"819-93-3190"];
+    
+    Contact *contact37 = [[Contact alloc] initWithTitle:@"mrs" first:@"dora" last:@"carter" street:@"5737 central st" city:@"cedar hill" state:@"arizona" zipCode:12277 large:nil medium:nil thumbnail:[UIImage imageNamed:@"37thumbnail.jpg"] gender:@"female" email:@"dora.carter91@example.com" username:@"organickoala94" password:@"females" phone:@"(423)-789-3127" cell:@"(790)-539-7307" ssn:@"489-32-3350"];
+    
+    Contact *contact30 = [[Contact alloc] initWithTitle:@"mr" first:@"johnni" last:@"stone" street:@"9574 w belt line rd" city:@"roanoke" state:@"iawaii" zipCode:88880 large:nil medium:nil thumbnail:[UIImage imageNamed:@"30thumbnail.jpg"] gender:@"male" email:@"johnni.stone57@example.com" username:@"heavycat526" password:@"ciccio" phone:@"(199)-537-7955" cell:@"(306)-835-6106" ssn:@"660-63-9633"];
+    
+    NSMutableArray *contacts = [NSMutableArray arrayWithObjects:contact93, contact21,contact37, contact30, nil];
+    
+    UINavigationController *navController = (UINavigationController*) self.window.rootViewController;
+    ContactCollectionViewController *contactCollectionController = [navController.viewControllers objectAtIndex:0];
+    contactCollectionController.contacts = contacts;
+    
     return YES;
 }
 
