@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ContactCollectionViewController.h
 //  ContactManager
 //
 //  Created by Anthony Camara on 19/06/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ContactCollectionViewController : UIViewController
 
 @end
-
